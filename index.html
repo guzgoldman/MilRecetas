@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mil Recetas!</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+        <!-- header -start -->
+        <header>
+            <div class="header" id="header">
+                <div class="texto1">Bienvenid@ a Mil Recetas - El sitio para compartir y guardar recetas de cocina.</div>
+                <button onclick={handleClick} class="close">X</button>
+            </div>
+            <nav>
+                <div class="nav-top">
+                    <div class="search-wrap w">
+                        <div class="logo">
+                            <a href="index.html"><img src="./img/logo.png" alt=""></a>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="Busca por ingrediente o por título" id="user-input">
+                            <div class="lupa"></div>
+                        </div>
+                        <div class="user">
+                            <a id="user_icon" href="./pages/login.html">Ingresar / Registrarme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <div class="navbar">
+                        <ul class="w">
+                            <li><a href="#recetas">Recetas</a></li>
+                            <li><a href="#tendencias">Tendencias</a></li>
+                            <li><a href="#celiacos">Celiacos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- header end -->
+
+        <!-- main start -->
+        <main>
+            <div class="main w">
+                <!-- floor_recetas start-->
+                <div class="floor">
+                    <div class="floor_good_hd" id="celulares">
+                        <h3>COCINA RICO CON ESTAS RECETAS</h3>
+                    </div>
+                    <div class="floor_good">
+                        <ul class="goods">
+                            <li>
+                                <a href="#">
+                                    <div class="picture">
+                                        <div class="pic_box">
+                                            <img src="./img/sopa_calabaza.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p class="good_title">
+                                            Sopa de Calabaza
+                                        </p>
+                                        <p class="price">
+                                            Haz click para ver esta receta
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- floor recetas end -->
+
+            </main>
+        <!-- main end -->
+</body>
+
+<script>
+    const header = document.getElementById("header");
+    if (header) {
+        function handleClick() {
+            header.classList.add("closed")
+        }
+        header.addEventListener("click", handleClick);
+    }
+</script>
+
+</html>
