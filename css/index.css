@@ -1,122 +1,90 @@
+/* CSS que aplica al Body (Header, Nav y Footer) */
+/* Derechos reservados al Grupo 4 : Matias Abel Cortés, Héctor Salvador Guzmán, Bárbara Marisol Garro, Ceballos Jorge */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root{
-    --bg-color:#b1eaee;
-    --bg-input-color: #a3a3a3;
-
-}
-
-body{
-    background-color:var(--bg-color);
-    font-family: 'Montserrat', sans-serif;
-}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.header{
-    display: flex;
-    background-color:var(--bg-input-color);
-    color: #000000;
+body {
+    position: relative;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    background-image: url(../img/fondo2.webp);
+    opacity: 0.1;
+    z-index: -1; 
 }
 
-.texto1{
-    line-height: 40px;
-    font-weight: 600;
+header{
+    background-image: url(../img/fondodis.webp);
+    background-position: center;
 }
 
-/* NAV */
-
-.navbar {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-top{
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 175px;
-    animation-name: girar;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.logo:hover {
-    animation-name: girar360;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes girar {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(0deg); }
-}
-
-@keyframes girar360 {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(360deg); }
+.logo{
+    max-width: 235px;
 }
 
 .logo img{
     width: 100%;
 }
 
-.search-wrap{
-    display: flex;
-    align-items: center;
-    height: 70px;
-    margin: 0 1rem;
-    justify-content: space-between;
-    width: 100%;
+.buscador {
+    border: 2px solid black;
+    height: 7rem;
+    border-radius: 40px;
+    width: 512px;
 }
 
 .search{
     position: relative;
-    width: 400px;
     height: 40px;
+    width: 90%;
 }
 
-.search input {
+.search input{
     width: 100%;
     height: 100%;
     font-size: 16px;
     border-radius: 8px;
-    padding-left: 35px;
-    background-color: #f3f9fb;
-    text-align: center;
 }
 
-.lupa {
+.search::before{
     position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    content: '';
+    display: block;
     width: 25px;
     height: 25px;
-    background: url(../img/search.png) no-repeat;
+    top:8px;
+    left: 6px;
+    background: url(../img/search.webp) no-repeat;
     background-size: contain;
 }
 
-.user{
-    display: flex;
-    align-items: center;
+.user-responsive {
+    display: none;
 }
 
 .user a{
+    font-size: 20px;
     position: relative;
-    color: black;
     font-weight: 700;
-    
+    text-decoration: none;
+}
+
+.user a:hover {
+    text-decoration: underline;
 }
 
 #user_out{
@@ -135,7 +103,7 @@ body{
 
 
 .user a:nth-child(1)::before{
-    background: url(../img/mapa\ de\ imágenes.png) no-repeat;
+    background: url(../img/mapa\ de\ imágenes.webp) no-repeat;
     background-position: -48px 5px;
     background-size: 100px 44px;
 }
@@ -144,68 +112,155 @@ body{
 .user a:nth-child(2)::before{
     top: 0;
     left: -32px;
-    background: url(../img/log-out-outline.png) no-repeat;
+    background: url(../img/log-out-outline.webp) no-repeat;
     background-position: 0 0;
     background-size: 23px 19px;
 }
 
-.subnav {
+nav {
     display: flex;          
-    justify-content: center; 
-    align-items: center;     
-    height: 70px;
-    line-height: 70px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid #000000;
+    justify-content: space-between; 
+    align-items: center;
 }
 
-.subnav .w {
-    display: flex;           
+nav ul {    
     padding: 0;              
-    margin: 0;               
-    list-style: none;        
+    margin: 0;  
 }
 
-.subnav a{
-    text-decoration: none;
-    height: 20px;
+nav ul li {
+    margin: 0 0.5rem;
+}
+
+
+nav ul li a{
     padding: 10px 20px;
     color: black;
-    font-weight: 600;
     border-radius: 20px;
     background-color: #ffa7e4;
     transition: all .5s;
+    text-decoration: none;
+    font-weight: 700;
 }
 
-.subnav a:hover{
+nav a:hover{
     color: #fff;
     background-color: #008ecc;
 }
 
-.w li {
-    margin: 0 10px;
-}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
 
-.close {
-    font-size: medium;
-    font-weight: 600;
-    border: none;
-    background: none;
-    cursor: default;
-}
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
 
-.closed {
-    display: none;
-}
+    nav {
+        width: 100%;
+    }
 
-@media screen and (max-width:899px) {
-    #header {
-        display: none;
+    nav ul {
+        justify-content: center;
+    }
+
+    .user {
+        justify-content: center;
     }
 }
 
+
+/* Footer */
+
 footer {
+    background-color: #166080;
+    color: #ffa7e4;
+    padding-top: 30px;
+}
+
+.footer-section h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    font-size: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .icon {
+    width: 35px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* copyright */
+
+
+.copyright{
+    height: 4rem;
+    border-top: 1px solid #ffa7e4;
+}
+
+.copyright p{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.login {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 2rem 0;
+}
+
+form .container {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    border: 4px solid black;
+    border-radius: 40px;
+    width: 320px;
+    padding: 4rem 2rem;
+}
+
+label {
+    padding-bottom: 0.5rem;
+}
+
+input {
+    margin-bottom: 0.5rem;
+    height: 1.4rem;
+}
+
+.password {
+    padding-bottom: 0.5rem;
+}
+
+button {
+    margin: 1rem 0;
+}
+
+form .container h3 {
+padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px){
+    .footer-section {
+        padding: 0.5rem 0;
+    }
 }

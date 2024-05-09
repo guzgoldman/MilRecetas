@@ -1,37 +1,28 @@
-/* main */
-/* floor_electric */
-
-main {
-    margin-top: 50px;
-}
-
-
-.floor {
-    display: flex;
-    flex-direction: column;
-}
-
 .floor_good_hd {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 48px;
 }
 
-.floor_good_hd h3 {
-    color: black;
-    font-size: 1.7rem;
-    font-weight: 700;
+.floor_good_hd i {
+    color: #166080;
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.floor_good {
-    margin-top: 25px;
+.floor_good_hd span {
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.goods {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: end;
+.floor_good_hd span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    left: 0;
+    width: 99%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #166080;
 }
 
 .goods li {
@@ -52,31 +43,28 @@ main {
     flex-direction: column;
     border: 2px solid #ffa7e4;
     border-radius: 15px;
+    text-decoration: none; 
 }
 
-.goods .picture {
-    flex: 2;
+.goods li:hover{
+    transform: translateY(-30px);
+}
+
+.goods li .picture {
+    width: 100%;
+    height: 180px;
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     border-radius: 15px 15px 0 0;
-    background-color: #d8d8d8;
 }
 
-.pic_box {
-    width: 100%;
-    text-align: center;
-    line-height: 120px;
-    /* width: 100px; */
-    height: 180px;
-}
-
-.pic_box img {
-    justify-content: center;
-    align-items: flex-start;
-    height: 180px;
-    width: 180px;
+.goods li .picture img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 
@@ -87,10 +75,13 @@ main {
     font-weight: 600;
     color: #000000;
     padding: 0 12px;
+    background-color: #66b4b8;
+    text-decoration: none; 
 }
 
 .good_title{
     font-size: large;
+    text-decoration: none; 
 }
 
 .good_title,
@@ -98,13 +89,23 @@ main {
 .price {
     flex: 1;
     padding-top: 8px;
-}
-
-.desc s {
-    font-weight: 200;
+    text-decoration: none; 
 }
 
 .price {
     border-top: 2px solid #000000;
-    color: #eb18ac;
+    color: #000000;
+}
+
+@media screen and (max-width:633px){
+    .floor_good ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+ul, ol, dl {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }

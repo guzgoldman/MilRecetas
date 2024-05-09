@@ -1,0 +1,89 @@
+.img_barra {
+    margin: 0 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.img_barra:hover {
+    transform: scale(1.1);
+}
+
+.nosotros_logo,
+.lugar_logo {
+    width: 100px;
+    height: auto;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.title_nos {
+    font-size: 50px;
+}
+
+.title_ubi {
+    font-size: 50px;
+}
+
+.text-block, .image-block {
+    flex: 1;
+}
+
+.text-block {
+    background-color: #acdfe2;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: auto;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+.image-block {
+    width: 5%;
+}
+
+.image-block img {
+    max-width: 80%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 40px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.maps_ubi{
+    width: 90%;
+    height: 85vh;
+}
+
+@media only screen and (max-width: 768px) {
+    article {
+        flex-direction: column;
+    }
+
+    .text-block, .image-block {
+        width: 100%;
+    }
+
+    .image-block img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section, .reverse {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+}
