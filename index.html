@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mil Recetas | Guarda y comparte recetas de cocina</title>
-
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d1ebd772a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <title>Mil Recetas | Guarda y comparte recetas de cocina</title>
 </head>
 
 <body>
     <header class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-md-4 col-8">
+            <div class="col-lg-3 col-8">
                 <div class="logo">
                     <a href="index.html"><img src="./img/logo.webp" alt=""></a>
                 </div>
             </div>
-            <nav class="col-md-4 justify-content-center d-none d-md-block">
+            <nav class="col-lg-6 justify-content-center d-none d-lg-block">
                 <ul id="menu-list" class="nav justify-content-center">
-                    <li><a href="#veggie">Veggie</a></li>
-                    <li><a href="#trending">Tendencias</a></li>
-                    <li><a href="#postres">Postres</a></li>
+                    <li class="px-2"><a href="#veggie">Veggie</a></li>
+                    <li class="px-2"><a href="#trending">Tendencias</a></li>
+                    <li class="px-2"><a href="#postres">Postres</a></li>
                 </ul>
             </nav>
-            <div id="user-large" class="col-md-4 d-md-block d-none text-end">
-                <div class="user"><a class="text-white" id="user_icon" href="./pages/login.html">Ingresa a tu cuenta</a></div>
+            <div id="user-large" class="col-lg-3 d-lg-block d-none text-end">
+                <div class="user">
+                    <i class="fa-regular fa-user pe-2 text-white fs-5"></i>
+                    <a class="text-white fs-5 text-decoration-none" id="user_icon" href="./pages/login.html">Ingresa a tu cuenta</a></div>
             </div>
-            <div class="col-4 col-md-4 d-flex justify-content-end">
-                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <div class="col-4 col-lg-4 d-flex justify-content-end">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
-        <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -51,7 +52,7 @@
         </div>
     </header>
     
-    <main class="container index-main mb-5">
+    <main class="container index-main mb-5 mt-md-5">
         <div class="search-container d-flex justify-content-center align-items-center">
             <div class="buscador d-flex justify-content-center align-items-center">
                 <div class="search">
@@ -59,14 +60,14 @@
                 </div>
             </div>
         </div>
-        <div class="floor mt-5 d-flex justify-content-center flex-column">
-            <div class="floor_good_hd" id="veggie">
+        <div class="mt-5 d-flex justify-content-center flex-column">
+            <div class="section-title" id="veggie">
                 <span class="position-relative text-black">Cocina rico con estas recetas </span><i>Vegetarianas</i>
             </div>
-            <div class="floor_good mt-3 mx-5">
-                <ul class="goods d-flex flex-wrap justify-content-center justify-content-md-between align-items-end">
-                    <li>
-                        <a href="#">
+            <div class="section-content mt-3 mx-5">
+                <ul class="recipe d-flex flex-wrap justify-content-center justify-content-md-between align-items-end">
+                    <li class="d-flex">
+                        <a class="d-flex flex-column text-decoration-none" href="#">
                             <div class="picture">
                                 <div class="pic_box">
                                     <img src="./img/recetas/sopa_calabaza.webp" alt="">
@@ -82,8 +83,8 @@
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="d-flex">
+                        <a class="d-flex flex-column text-decoration-none" href="#">
                             <div class="picture">
                                 <div class="pic_box">
                                     <img src="./img/recetas/ratatouille.jfif" alt="">
@@ -99,8 +100,8 @@
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="d-flex">
+                        <a class="d-flex flex-column text-decoration-none" href="#">
                             <div class="picture">
                                 <div class="pic_box">
                                     <img src="./img/recetas/mila_soja.webp" alt="">
@@ -120,14 +121,14 @@
                 </ul>
             </div>
         </div>
-        <div class="floor mt-5 d-flex justify-content-center flex-column">
-            <div class="floor_good_hd" id="trending">
+        <div class="mt-5 d-flex justify-content-center flex-column">
+            <div class="section-title" id="trending">
                 <span class="position-relative text-black">Las mejores recetas las encontras en </span><i>Tendencias</i>
             </div>
-            <div class="floor_good mt-3 mx-5">
-                <ul class="goods d-flex flex-wrap justify-content-center justify-content-md-between align-items-end">
-                    <li>
-                        <a href="#">
+            <div class="section-content mt-3 mx-5">
+                <ul class="recipe d-flex flex-wrap justify-content-center justify-content-md-between align-items-end">
+                    <li class="d-flex">
+                        <a class="d-flex flex-column text-decoration-none" href="#">
                             <div class="picture">
                                 <div class="pic_box">
                                     <img src="./img/recetas/ojo_de_bife.webp" alt="">
@@ -144,8 +145,8 @@
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
+                    <li class="d-flex">
+                        <a class="d-flex flex-column text-decoration-none" href="#">
                             <div class="picture">
                                 <div class="pic_box">
                                     <img src="./img/recetas/pastel_de_papa.webp" alt="">
@@ -161,8 +162,8 @@
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="d-flex">
+                        <a class="d-flex flex-column text-decoration-none" href="#">
                             <div class="picture">
                                 <div class="pic_box">
                                     <img src="./img/recetas/pollo_al_horno.webp" alt="">
@@ -181,14 +182,14 @@
                 </ul>
             </div>
         </div>
-        <div class="floor mt-5 d-flex justify-content-center flex-column">
-            <div class="floor_good_hd" id="postres">
+        <div class="mt-5 d-flex justify-content-center flex-column">
+            <div class="section-title" id="postres">
                 <span class="position-relative text-black">Recetas para preparar los mejores </span><i>Postres</i>
             </div>
-            <div class="floor_good mt-3 mx-5">
-                <ul class="goods d-flex flex-wrap justify-content-center justify-content-md-between align-items-end">
-                    <li>
-                        <a href="#">
+            <div class="section-content mt-3 mx-5">
+                <ul class="recipe d-flex flex-wrap justify-content-center justify-content-md-between align-items-end">
+                    <li class="d-flex">
+                        <a class="d-flex flex-column text-decoration-none" href="#">
                             <div class="picture">
                                 <div class="pic_box">
                                     <img src="./img/recetas/lemon_pie.webp" alt="">
@@ -204,8 +205,8 @@
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="d-flex">
+                        <a class="d-flex flex-column text-decoration-none" href="#">
                             <div class="picture">
                                 <div class="pic_box">
                                     <img src="./img/recetas/peras_al_vino.webp" alt="">
@@ -221,8 +222,8 @@
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="d-flex">
+                        <a class="d-flex flex-column text-decoration-none" href="#">
                             <div class="picture">
                                 <div class="pic_box">
                                     <img src="./img/recetas/red_velvet.webp" alt="">
@@ -242,6 +243,7 @@
             </div>
         </div>
     </main>
+
     <footer class="container-fluid">
         <div class="row py-3">
             <div class="footer-section col-12 col-md-4 px-5 text-center text-md-start">
@@ -271,6 +273,7 @@
             <p>Copyright &copy; 2024 - Grupo 4 Codo a Codo (Full Stack Python)</p>
         </div>
     </footer>
+
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

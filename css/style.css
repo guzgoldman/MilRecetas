@@ -77,10 +77,8 @@ header{
 }
 
 .user a{
-    font-size: 20px;
     position: relative;
     font-weight: 700;
-    text-decoration: none;
 }
 
 .user a:hover {
@@ -90,52 +88,6 @@ header{
 #user_out{
     display: none;
 }
-
-.user a::before{
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -35px;
-    display: block;
-    width: 28px;
-    height: 28px;
-}
-
-
-.user a:nth-child(1)::before{
-    background: url(../img/mapa\ de\ imágenes.webp) no-repeat;
-    background-position: -48px 5px;
-    background-size: 100px 44px;
-}
-
-
-.user a:nth-child(2)::before{
-    top: 0;
-    left: -32px;
-    background: url(../img/log-out-outline.webp) no-repeat;
-    background-position: 0 0;
-    background-size: 23px 19px;
-}
-
-main {
-    margin-top: 3rem;
-}
-
-nav {
-    display: flex;          
-    justify-content: space-between; 
-    align-items: center;
-}
-
-nav ul {    
-    padding: 0;              
-    margin: 0;  
-}
-
-nav ul li {
-    margin: 0 0.5rem;
-}
-
 
 nav ul li a{
     padding: 10px 20px;
@@ -294,23 +246,18 @@ p {
     margin-bottom: 0;
 }
 
-
-.floor_good_hd {
-    height: 48px;
-}
-
-.floor_good_hd i {
+.section-title i {
     color: #166080;
     font-size: 24px;
     font-weight: 600;
 }
 
-.floor_good_hd span {
+.section-title span {
     font-size: 24px;
     font-weight: 600;
 }
 
-.floor_good_hd span::after {
+.section-title span::after {
     content: '';
     position: absolute;
     display: block;
@@ -322,8 +269,7 @@ p {
     background-color: #166080;
 }
 
-.goods li {
-    display: flex;
+.recipe li {
     margin: 18px 5px;
     width: 225px;
     height: 295px;
@@ -333,21 +279,18 @@ p {
     transition: all .5s;
 }
 
-.goods li a {
+.recipe li a {
     flex: 1;
-    display: flex;
     width: 100%;
-    flex-direction: column;
     border: 2px solid #ffa7e4;
     border-radius: 15px;
-    text-decoration: none; 
 }
 
-.goods li:hover{
+.recipe li:hover{
     transform: translateY(-30px);
 }
 
-.goods li .picture {
+.recipe li .picture {
     width: 100%;
     height: 180px;
     display: flex;
@@ -357,7 +300,7 @@ p {
     border-radius: 15px 15px 0 0;
 }
 
-.goods li .picture img {
+.recipe li .picture img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -395,9 +338,7 @@ p {
 }
 
 @media screen and (max-width:633px){
-    .floor_good ul {
-        display: flex;
-        justify-content: center;
+    .section-content ul {
         margin-top: 1rem;
     }
 }
@@ -409,17 +350,17 @@ ul, ol, dl {
 }
 
 @media screen and (max-width:768px) {
-    .goods li {
+    .recipe li {
         transition: none;
     }
 
-    .goods li:hover{
+    .recipe li:hover{
         transform: none;
     }
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .floor_good_hd h3::before {
         bottom: -3px; 
     }
