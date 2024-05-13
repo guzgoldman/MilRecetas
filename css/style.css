@@ -290,17 +290,14 @@ p {
     transform: translateY(-30px);
 }
 
-.recipe li .picture {
+.recipe-photo {
     width: 100%;
     height: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
 }
 
-.recipe li .picture img {
+.recipe-photo img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -308,33 +305,23 @@ p {
 }
 
 
-.desc {
+.recipe-description {
     flex: 1;
-    display: flex;
-    flex-direction: column;
     font-weight: 600;
-    color: #000000;
     padding: 0 12px;
     background-color: #66b4b8;
-    text-decoration: none; 
 }
 
-.good_title{
-    font-size: large;
-    text-decoration: none; 
-}
-
-.good_title,
+.recipe-title,
 .previous_price,
 .price {
     flex: 1;
     padding-top: 8px;
-    text-decoration: none; 
 }
 
 .price {
-    border-top: 2px solid #000000;
-    color: #000000;
+    border-top: 2px solid black;
+    color: black;
 }
 
 @media screen and (max-width:633px){
@@ -425,7 +412,7 @@ ul, ol, dl {
 
 .text-block {
     background-color: #acdfe2;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
     font-weight: bold;
     border-radius: 40px;
@@ -447,11 +434,7 @@ img {
     height: auto;
 }
 
-.reverse {
-    flex-direction: row-reverse;
-}
-
-.maps_ubi{
+.mapa{
     width: 90%;
     height: 85vh;
 }
@@ -470,12 +453,11 @@ img {
         height: auto;
     }
 
-    .section, .reverse {
+    .section {
         flex-direction: column;
     }
 
     img {
         max-width: 100%;
     }
-
 }

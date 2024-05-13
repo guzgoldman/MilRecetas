@@ -53,16 +53,35 @@
     </header>
 
     <main class="container">
+        <div class="login">
+            <form action="./login.html" method="">
+                <div class="container">
+                    <h3>Registrate</h3>
+                    <label for="username">Ingresa un nombre de usuario</label>
+                    <input type="text" placeholder="Nombre de usuario" name="username" required minlength="8" maxlength="32">
 
+                    <label for="email">Ingresa tu email</label>
+                    <input type="text" placeholder="Email" name="email" required>
+
+                    <label for="password">Ingresa una contraseña</label>
+                    <input type="password" placeholder="Contraseña" name="password" id="" required minlength="8">
+                    
+                    <label for="confirm">Confirmación de contraseña</label>
+                    <input type="password" placeholder="Confirma tu contraseña" name="confirm" required minlength="8">
+
+                    <button type="submit">Crear una cuenta</button>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer class="container-fluid">
         <div class="row py-3">
             <div class="footer-section col-12 col-md-4 px-5 text-center text-md-start">
                 <h2>Contacto</h2>
-                <ul>
-                    <li><img src="../img/Whatsapp.webp" alt="Icono WhatsApp" class="icon"> <a class="text-white text-decoration-none" href="#">WhatsApp</a></li>
-                    <li><img src="../img/redes_sociales.webp" alt="Icono RRSS" class="icon"> <a class="text-white text-decoration-none" href="#">Redes Sociales</a></li>
+                <ul class="contacto">
+                    <li><i class="fa-brands fa-whatsapp fs-2 icon"></i><a class="text-white text-decoration-none" href="#">WhatsApp</a></li>
+                    <li><img src="../img/redes_sociales.webp" alt="Icono RRSS" class="icon"> <a class="text-white text-decoration-none" href="#">Redes sociales</a></li>
                 </ul>
             </div>
             <div class="footer-section col-12 col-md-4 px-5 text-center text-md-start">
