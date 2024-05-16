@@ -23,7 +23,10 @@ document.getElementById('login-button').addEventListener('click', function(event
         }
 
         if((username.value.trim().length < 8 || username.value.trim().length > 32) && password.value.trim().length < 8) {
-            errorMessage.textContent = "El nombre de usuario y la contraseña son incorrectos o han sido ingresados.";
+            errorMessage.textContent = "El nombre de usuario y la contraseña son incorrectos o no han sido ingresados.";
         }
     }
 });
+
+
+document.querySelector("form").setAttribute("action", "");
