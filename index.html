@@ -12,32 +12,32 @@
 
 <body>
     <header class="container-fluid">
-        <div class="row align-items-center">
+        <div class="header-position">
             <div class="col-lg-3 col-8">
                 <div class="logo">
                     <a href="index.html"><img src="./img/logo.webp" alt=""></a>
                 </div>
             </div>
-            <nav class="col-lg-6 justify-content-center d-none d-lg-block">
-                <ul id="menu-list" class="nav justify-content-center">
-                    <li class="px-2"><a href="#veggie">Veggie</a></li>
-                    <li class="px-2"><a href="#trending">Tendencias</a></li>
-                    <li class="px-2"><a href="#postres">Postres</a></li>
+            <nav class="col-lg-6">
+                <ul id="menu-list" class="nav">
+                    <li><a href="#veggie">Veggie</a></li>
+                    <li><a href="#trending">Tendencias</a></li>
+                    <li><a href="#postres">Postres</a></li>
                 </ul>
             </nav>
-            <div id="user-large" class="col-lg-3 d-lg-block d-none text-end">
+            <div id="user-large" class="col-lg-3">
                 <div class="user">
-                    <i class="fa-regular fa-user pe-2 text-white fs-5"></i>
-                    <a class="text-white fs-5" href="./pages/login.html">Ingresa a tu cuenta</a></div>
+                    <i class="fa-regular fa-user"></i>
+                    <a href="./pages/login.html">Ingresa a tu cuenta</a></div>
             </div>
-            <div class="col-4 col-lg-4 d-flex justify-content-end">
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <div class="navbar-button col-4 col-lg-4">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
-        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
             <div class="offcanvas-header">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -52,62 +52,70 @@
         </div>
     </header>
     
-    <main class="container index-main mb-5 mt-md-5">
-        <div class="search-container d-flex justify-content-center align-items-center">
-            <div class="buscador d-flex justify-content-center align-items-center">
+    <main class="container">
+        <div class="search-container">
+            <div class="buscador">
                 <div class="search">
-                    <input class="text-center" type="text" placeholder="Busca por nombre o ingrediente" id="user-input">
+                    <input type="text" placeholder="Busca por nombre o ingrediente" id="user-input">
                 </div>
             </div>
         </div>
-        <div class="mt-5 d-flex justify-content-center flex-column">
-            <div class="section-title mb-3" id="veggie">
-                <span class="position-relative text-black">Cocina rico con estas recetas </span><i>Vegetarianas</i>
+        <div class="section">
+            <div class="section-title" id="veggie">
+                <span>Cocina rico con estas recetas </span><i>Vegetarianas</i>
             </div>
-            <div class="section-content mt-3 mx-5">
-                <ul class="recipe d-flex flex-wrap justify-content-center justify-content-md-between align-items-end">
-                    <li class="d-flex">
-                        <a class="d-flex flex-column text-decoration-none" href="#">
-                            <div class="recipe-photo d-flex justify-content-center align-items-center">
+            <div class="section-content">
+                <ul class="recipe justify-content-md-between">
+                    <li>
+                        <a href="#">
+                            <div class="recipe-photo">
                                 <div class="pic_box">
                                     <img src="./img/recetas/sopa_calabaza.webp" alt="">
                                 </div>
                             </div>
-                            <div class="recipe-description d-flex flex-column text-decoration-none text-black">
-                                <p class="recipe-title fs-5 text-decoration-none">
+                            <div class="recipe-description">
+                                <p class="recipe-title">
                                     Sopa de Calabaza
                                 </p>
-                                <p class="price">Ver receta <i class="fa-solid fa-arrow-right"></i></p>
+                                <p class="price">
+                                    Ver receta 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="d-flex">
-                        <a class="d-flex flex-column text-decoration-none" href="#">
-                            <div class="recipe-photo d-flex justify-content-center align-items-center">
+                    <li>
+                        <a href="#">
+                            <div class="recipe-photo">
                                 <div class="pic_box">
                                     <img src="./img/recetas/ratatouille.jfif" alt="">
                                 </div>
                             </div>
-                            <div class="recipe-description d-flex flex-column text-decoration-none text-black">
-                                <p class="recipe-title fs-5 text-decoration-none">
+                            <div class="recipe-description">
+                                <p class="recipe-title">
                                     Ratatouille
                                 </p>
-                                <p class="price">Ver receta <i class="fa-solid fa-arrow-right"></i></p>
+                                <p class="price">
+                                    Ver receta 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="d-flex">
-                        <a class="d-flex flex-column text-decoration-none" href="#">
-                            <div class="recipe-photo d-flex justify-content-center align-items-center">
+                    <li>
+                        <a href="#">
+                            <div class="recipe-photo">
                                 <div class="pic_box">
                                     <img src="./img/recetas/mila_soja.webp" alt="">
                                 </div>
                             </div>
-                            <div class="recipe-description d-flex flex-column text-decoration-none text-black">
-                                <p class="recipe-title fs-5 text-decoration-none">
+                            <div class="recipe-description">
+                                <p class="recipe-title">
                                     Milanesa de Soja
                                 </p>
-                                <p class="price">Ver receta <i class="fa-solid fa-arrow-right"></i></p>
+                                <p class="price">Ver receta 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
                             </div>
                         </a>
                     </li>
@@ -115,109 +123,120 @@
                 </ul>
             </div>
         </div>
-        <div class="mt-5 d-flex justify-content-center flex-column">
-            <div class="section-title mb-3" id="trending">
-                <span class="position-relative text-black">Las mejores recetas las encontras en </span><i>Tendencias</i>
+        <div class="section">
+            <div class="section-title" id="trending">
+                <span>Las mejores recetas las encontras en </span><i>Tendencias</i>
             </div>
-            <div class="section-content mt-3 mx-5">
-                <ul class="recipe d-flex flex-wrap justify-content-center justify-content-md-between align-items-end">
-                    <li class="d-flex">
-                        <a class="d-flex flex-column text-decoration-none" href="#">
-                            <div class="recipe-photo d-flex justify-content-center align-items-center">
+            <div class="section-content">
+                <ul class="recipe justify-content-md-between">
+                    <li>
+                        <a href="#">
+                            <div class="recipe-photo">
                                 <div class="pic_box">
                                     <img src="./img/recetas/ojo_de_bife.webp" alt="">
                                 </div>
                             </div>
-                            <div class="recipe-description d-flex flex-column text-decoration-none text-black">
-                                <p class="recipe-title fs-5 text-decoration-none">
+                            <div class="recipe-description">
+                                <p class="recipe-title">
                                     Ojo de Bife
                                 </p>
-                                <p class="price">Ver receta <i class="fa-solid fa-arrow-right"></i></p>
+                                <p class="price">Ver receta 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
                             </div>
                         </a>
                     </li>
-
-                    <li class="d-flex">
-                        <a class="d-flex flex-column text-decoration-none" href="#">
-                            <div class="recipe-photo d-flex justify-content-center align-items-center">
+                    <li>
+                        <a href="#">
+                            <div class="recipe-photo">
                                 <div class="pic_box">
                                     <img src="./img/recetas/pastel_de_papa.webp" alt="">
                                 </div>
                             </div>
-                            <div class="recipe-description d-flex flex-column text-decoration-none text-black">
-                                <p class="recipe-title fs-5 text-decoration-none">
+                            <div class="recipe-description">
+                                <p class="recipe-title">
                                     Pastel de papa
                                 </p>
-                                <p class="price">Ver receta <i class="fa-solid fa-arrow-right"></i></p>
+                                <p class="price">Ver receta 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="d-flex">
-                        <a class="d-flex flex-column text-decoration-none" href="#">
-                            <div class="recipe-photo d-flex justify-content-center align-items-center">
+                    <li>
+                        <a href="#">
+                            <div class="recipe-photo">
                                 <div class="pic_box">
                                     <img src="./img/recetas/pollo_al_horno.webp" alt="">
                                 </div>
                             </div>
-                            <div class="recipe-description d-flex flex-column text-decoration-none text-black">
-                                <p class="recipe-title fs-5 text-decoration-none">
+                            <div class="recipe-description">
+                                <p class="recipe-title">
                                     Pollo al horno
                                 </p>
-                                <p class="price">Ver receta <i class="fa-solid fa-arrow-right"></i></p>
+                                <p class="price">Ver receta 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="mt-5 d-flex justify-content-center flex-column">
-            <div class="section-title mb-3" id="postres">
-                <span class="position-relative text-black">Recetas para preparar los mejores </span><i>Postres</i>
+        <div class="section">
+            <div class="section-title" id="postres">
+                <span>Recetas para preparar los mejores </span><i>Postres</i>
             </div>
-            <div class="section-content mt-3 mx-5">
-                <ul class="recipe d-flex flex-wrap justify-content-center justify-content-md-between align-items-end">
-                    <li class="d-flex">
-                        <a class="d-flex flex-column text-decoration-none" href="#">
-                            <div class="recipe-photo d-flex justify-content-center align-items-center">
+            <div class="section-content">
+                <ul class="recipe justify-content-md-between">
+                    <li>
+                        <a href="#">
+                            <div class="recipe-photo">
                                 <div class="pic_box">
                                     <img src="./img/recetas/lemon_pie.webp" alt="">
                                 </div>
                             </div>
-                            <div class="recipe-description d-flex flex-column text-decoration-none text-black">
-                                <p class="recipe-title fs-5 text-decoration-none">
+                            <div class="recipe-description">
+                                <p class="recipe-title">
                                     Lemon Pie
                                 </p>
-                                <p class="price">Ver receta <i class="fa-solid fa-arrow-right"></i></p>
+                                <p class="price">Ver receta 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="d-flex">
-                        <a class="d-flex flex-column text-decoration-none" href="#">
-                            <div class="recipe-photo d-flex justify-content-center align-items-center">
+                    <li>
+                        <a href="#">
+                            <div class="recipe-photo">
                                 <div class="pic_box">
                                     <img src="./img/recetas/peras_al_vino.webp" alt="">
                                 </div>
                             </div>
-                            <div class="recipe-description d-flex flex-column text-decoration-none text-black">
-                                <p class="recipe-title fs-5 text-decoration-none">
+                            <div class="recipe-description">
+                                <p class="recipe-title">
                                     Peras al vino
                                 </p>
-                                <p class="price">Ver receta <i class="fa-solid fa-arrow-right"></i></p>
+                                <p class="price">Ver receta 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="d-flex">
-                        <a class="d-flex flex-column text-decoration-none" href="#">
-                            <div class="recipe-photo d-flex justify-content-center align-items-center">
+                    <li>
+                        <a href="#">
+                            <div class="recipe-photo">
                                 <div class="pic_box">
                                     <img src="./img/recetas/red_velvet.webp" alt="">
                                 </div>
                             </div>
-                            <div class="recipe-description d-flex flex-column text-decoration-none text-black">
-                                <p class="recipe-title fs-5 text-decoration-none">
+                            <div class="recipe-description">
+                                <p class="recipe-title">
                                     Red Velvet Cake
                                 </p>
-                                <p class="price">Ver receta <i class="fa-solid fa-arrow-right"></i></p>
+                                <p class="price">Ver receta 
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
                             </div>
                         </a>
                     </li>
@@ -227,31 +246,37 @@
     </main>
 
     <footer class="container-fluid">
-        <div class="row py-3">
-            <div class="footer-section col-12 col-md-4 px-5 text-center text-md-start">
+        <div class="footer-position">
+            <div class="footer-section col-12 col-md-4">
                 <h2>Contacto</h2>
                 <ul class="contacto">
-                    <li><i class="fa-brands fa-whatsapp fs-2 icon"></i><a class="text-white text-decoration-none" href="#">WhatsApp</a></li>
-                    <li><img src="./img/redes_sociales.webp" alt="Icono RRSS" class="icon"> <a class="text-white text-decoration-none" href="#">Redes sociales</a></li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp fs-2 icon"></i>
+                        <a href="#">WhatsApp</a>
+                    </li>
+                    <li>
+                        <img src="./img/redes_sociales.webp" alt="Icono RRSS" class="icon">
+                        <a href="#">Redes sociales</a>
+                    </li>
                 </ul>
             </div>
-            <div class="footer-section col-12 col-md-4 px-5 text-center text-md-start">
+            <div class="footer-section col-12 col-md-4">
                 <h2>Categorías</h2>
                 <ul>
-                    <li><a class="text-white text-decoration-none" href="#veggie">Veggie</a></li>
-                    <li><a class="text-white text-decoration-none" href="#trending">Tendencias</a></li>
-                    <li><a class="text-white text-decoration-none" href="#postres">Postres</a></li>
+                    <li><a href="#veggie">Veggie</a></li>
+                    <li><a href="#trending">Tendencias</a></li>
+                    <li><a href="#postres">Postres</a></li>
                 </ul>
             </div>
-            <div class="footer-section col-12 col-md-4 px-5 text-center text-md-start">
+            <div class="footer-section col-12 col-md-4">
                 <h2>Conocenos</h2>
                 <ul>
-                    <li><a class="text-white" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a class="text-white" href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
                 </ul>
             </div>
         </div>
-        <div class="copyright d-flex justify-content-center align-items-center text-center py-3">
+        <div class="copyright">
             <p>Copyright &copy; 2024 - Grupo 4 Codo a Codo (Full Stack Python)</p>
         </div>
     </footer>
