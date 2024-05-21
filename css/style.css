@@ -15,6 +15,52 @@ body {
     overflow-y: auto;
 }
 
+.header-position {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#user-large {
+    text-align: right;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+    nav {
+        display: none;
+    }
+
+    #user-large {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .offcanvas-end {
+        display: none;
+    }
+}
+
+.navbar-button {
+    display: flex;
+    justify-content: end;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
 body::before {
     content: "";
     position: absolute;
@@ -32,6 +78,16 @@ header{
     background-position: center;
 }
 
+main {
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin-top: 3rem;
+    }
+}
+
 .logo{
     max-width: 235px;
 }
@@ -45,6 +101,9 @@ header{
     height: 7rem;
     border-radius: 40px;
     width: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search{
@@ -53,11 +112,33 @@ header{
     width: 95%;
 }
 
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-title {
+    margin-bottom: 1rem;
+}
+
+.section-content {
+    margin: 1rem 3rem 0 3rem;
+}
+
 .search input{
     width: 100%;
     height: 100%;
     font-size: 16px;
     border-radius: 8px;
+    text-align: center;
 }
 
 .search::before{
@@ -80,6 +161,8 @@ header{
     position: relative;
     font-weight: 700;
     text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
 }
 
 .user a:hover {
@@ -88,6 +171,16 @@ header{
 
 #user_out{
     display: none;
+}
+
+.user i {
+    color: white;
+    font-size: 1.25rem;
+    padding-right: .5rem;
+}
+
+nav ul li {
+    padding: 0 .5rem;
 }
 
 nav ul li a{
@@ -150,6 +243,26 @@ nav a:hover{
 
 
 /* Footer */
+.footer-position {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.footer-section {
+    text-align: center;
+    padding: 0 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-position {
+        flex-direction: row;
+    }
+
+    .footer-section {
+        text-align: start;
+    }
+}
 
 footer {
     background-color: #166080;
@@ -171,6 +284,7 @@ footer {
 }
 
 .footer-section ul li a {
+    color: white;
     text-decoration: none;
 }
 
@@ -189,6 +303,11 @@ footer {
 
 
 .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
     border-top: 1px solid #ffa7e4;
 }
 
@@ -264,6 +383,8 @@ p {
 }
 
 .section-title span {
+    position: relative;
+    color: black;
     font-size: 24px;
     font-weight: 600;
 }
@@ -280,7 +401,15 @@ p {
     background-color: #166080;
 }
 
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+}
+
 .recipe li {
+    display: flex;
     margin: 18px 5px;
     width: 225px;
     height: 295px;
@@ -291,6 +420,9 @@ p {
 }
 
 .recipe li a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
     flex: 1;
     width: 100%;
     border: 2px solid #ffa7e4;
@@ -302,6 +434,9 @@ p {
 }
 
 .recipe-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 180px;
     overflow: hidden;
@@ -317,10 +452,19 @@ p {
 
 
 .recipe-description {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
     flex: 1;
     font-weight: 600;
     padding: 0 12px;
     background-color: #66b4b8;
+}
+
+.recipe-title {
+    font-size: 1.25rem;
+    text-decoration: none;
 }
 
 .recipe-title,
@@ -386,15 +530,19 @@ ul, ol, dl {
 }
 
 
+.bar {
+    display: flex;
+    justify-content: center;
+}
 
-
-.img_barra {
+.bar-img {
     margin: 0 10px;
     position: relative;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
-.img_barra:hover {
+.bar-img:hover {
     transform: scale(1.1);
 }
 
@@ -402,19 +550,46 @@ ul, ol, dl {
 .lugar_logo {
     width: 100px;
     height: auto;
+    display: block;
+    margin: auto;
 }
 
 .title {
+    text-decoration: none;
+    color: black;
     font-weight: bold;
     font-size: 20px;
 }
 
 .title_nos {
     font-size: 50px;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.info-reverse-row {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .info-reverse-row, .info-row {
+        flex-direction: column;
+    }
 }
 
 .title_ubi {
     font-size: 50px;
+    text-align: center;
+    margin: 1.5rem 0;
 }
 
 .text-block, .image-block {
@@ -422,6 +597,8 @@ ul, ol, dl {
 }
 
 .text-block {
+    text-align: center;
+    padding: 1.5rem;
     background-color: #acdfe2;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
@@ -431,6 +608,8 @@ ul, ol, dl {
 
 .image-block {
     width: 5%;
+    text-align: center;
+    padding: 1.5rem;
 }
 
 .image-block img {
@@ -445,9 +624,16 @@ img {
     height: auto;
 }
 
-.mapa{
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map{
     width: 90%;
     height: 85vh;
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {

@@ -12,32 +12,32 @@
 
 <body>
     <header class="container-fluid">
-        <div class="row align-items-center">
+        <div class="header-position">
             <div class="col-lg-3 col-8">
                 <div class="logo">
                     <a href="../index.html"><img src="../img/logo.webp" alt=""></a>
                 </div>
             </div>
-            <nav class="col-lg-6 justify-content-center d-none d-lg-block">
-                <ul id="menu-list" class="nav justify-content-center">
-                    <li class="px-2"><a href="../index.html#veggie">Veggie</a></li>
-                    <li class="px-2"><a href="../index.html#trending">Tendencias</a></li>
-                    <li class="px-2"><a href="../index.html#postres">Postres</a></li>
+            <nav class="col-lg-6">
+                <ul id="menu-list" class="nav">
+                    <li><a href="../index.html#veggie">Veggie</a></li>
+                    <li><a href="../index.html#trending">Tendencias</a></li>
+                    <li><a href="../index.html#postres">Postres</a></li>
                 </ul>
             </nav>
-            <div id="user-large" class="col-lg-3 d-lg-block d-none text-end">
+            <div id="user-large" class="col-lg-3">
                 <div class="user">
-                    <i class="fa-regular fa-user pe-2 text-white fs-5"></i>
-                    <a class="text-white fs-5" href="./login.html">Ingresa a tu cuenta</a></div>
+                    <i class="fa-regular fa-user"></i>
+                    <a href="./login.html">Ingresa a tu cuenta</a></div>
             </div>
-            <div class="col-4 col-lg-4 d-flex justify-content-end">
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <div class="navbar-button col-4 col-lg-4">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
-        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
             <div class="offcanvas-header">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -52,112 +52,129 @@
         </div>
     </header>
 
-    <main class="mt-4">
-        <div class="barra d-flex justify-content-center">
-            <div class="img_barra text-center">
+    <main>
+        <div class="bar">
+            <div class="bar-img">
                 <a href="#nosotros">
-                <img src="../img/nosotros.webp" alt="Nosotros logo" class="nosotros_logo d-block m-auto">
+                <img src="../img/nosotros.webp" alt="Nosotros logo" class="nosotros_logo">
                 </a>
-                <a class="title text-decoration-none text-black" href="#nosotros">Nosotros</a>
+                <a class="title" href="#nosotros">Nosotros</a>
             </div>
-            <div class="img_barra">
+            <div class="bar-img">
                 <a href="#ubicacion">
-                <img src="../img/lugar.webp" alt="lugar logo" class="lugar_logo d-block m-auto" >
+                <img src="../img/lugar.webp" alt="lugar logo" class="lugar_logo" >
                 </a>
-                <a class="title text-decoration-none text-black" href="#ubicacion">Ubicación</a>
+                <a class="title" href="#ubicacion">Ubicación</a>
             </div>
         </div>
         <hr>
         <section class="container">
+<<<<<<< HEAD
             <h1 class="title_nos text-center my-4" >Nosotros</h1>
             <div class="d-flex align-items-center mb-5">
                 <div class="text-block p-4 text-center col-12 col-lg-6">
+=======
+            <h1 class="title_nos" id="nosotros">Nosotros</h1>
+            <div class="info-row">
+                <div class="text-block col-12 col-lg-6">
+>>>>>>> 735a9715c6b1f4c51e34d6614e2abaa496655fa5
                     <p>Desde hace tiempo, en Mil Recetas nos hemos dedicado con pasión a compartir una amplia variedad de recetas que inspiran y deleitan a todos los amantes de la cocina. Nos enorgullece ofrecer un amplio abanico de opciones, desde sabrosas recetas vegetarianas hasta deliciosos postres que endulzan el paladar.</p>
                 </div>
-                <div class="image-block text-center p-4 col-12 col-lg-6">
+                <div class="image-block col-12 col-lg-6">
                     <img src="../img/nos1.webp" alt="Imagen decorativa 1">
                 </div>
             </div>
 
-            <div class="flex-md-row-reverse d-flex align-items-center mb-5 ">
-                <div class="text-block p-4 text-center col-12 col-lg-6">
+            <div class="info-reverse-row">
+                <div class="text-block col-12 col-lg-6">
                     <p>
                         Nuestra misión es simple: hacer que cocinar sea una experiencia emocionante y gratificante para todos. Ya sea que estés buscando preparar una comida reconfortante para tu familia o sorprender a tus invitados con un plato innovador, en Mil Recetas encontrarás la inspiración que necesitas.
                     </p>
                 </div>
-                <div class="image-block text-center p-4 col-12 col-lg-6">
+                <div class="image-block col-12 col-lg-6">
                     <img src="../img/nos2.webp" alt="Imagen decorativa 2">
                 </div>
             </div>
 
-            <div class="d-flex align-items-center mb-5">
-                <div class="text-block p-4 text-center col-12 col-lg-6">
+            <div class="info-row">
+                <div class="text-block col-12 col-lg-6">
                     <p>
                         Además de las recetas, en Mil Recetas también encontrarás consejos útiles, trucos culinarios y recomendaciones de ingredientes para ayudarte a mejorar tus habilidades en la cocina y alcanzar resultados extraordinarios.
                     </p>
                 </div>
-                <div class="image-block text-center p-4 col-12 col-lg-6">
+                <div class="image-block col-12 col-lg-6">
                     <img src="../img/nos3.webp" alt="Imagen decorativa 3">
                 </div>
             </div>
 
-            <div class="flex-md-row-reverse d-flex align-items-center mb-5">
-                <div class="text-block p-4 text-center col-12 col-lg-6">
+            <div class="info-reverse-row">
+                <div class="text-block col-12 col-lg-6">
                     <p>
                         Nos sentimos honrados de ser parte de tu viaje culinario y esperamos inspirarte a explorar nuevas recetas, experimentar con ingredientes frescos y, sobre todo, disfrutar del placer de cocinar y compartir una comida deliciosa con tus seres queridos.
                     </p>
                 </div>
-                <div class="image-block text-center p-4 col-12 col-lg-6">
+                <div class="image-block col-12 col-lg-6">
                     <img src="../img/nos4.webp" alt="Imagen decorativa 4">
                 </div>
             </div>
             
-            <div class="d-flex align-items-center mb-5">
-                <div class="text-block p-4 text-center col-12 col-lg-6">
+            <div class="info-row">
+                <div class="text-block col-12 col-lg-6">
                     <p>
                         Gracias por elegir Mil Recetas. ¡Juntos, hagamos que cada comida sea una experiencia inolvidable!
                     </p>
                 </div>
-                <div class="image-block text-center p-4 col-12 col-lg-6">
+                <div class="image-block col-12 col-lg-6">
                     <img src="../img/logo.webp" alt="Imagen decorativa 5">
                 </div>
             </div>
         </section>
         <hr>
         <section class="container">
-            <h1 class="title_ubi my-4 text-center" id="ubicacion">Ubicación</h1>
-            <div class="container text-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47496040538!2d-58.59811041493593!3d-34.615430352200306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714352874744!5m2!1ses-419!2sar"  class="mapa justify-content-center" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h1 class="title_ubi" id="ubicacion">Ubicación</h1>
+            <div class="container map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47496040538!2d-58.59811041493593!3d-34.615430352200306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714352874744!5m2!1ses-419!2sar"  class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
 
     <footer class="container-fluid">
-        <div class="row py-3">
-            <div class="footer-section col-12 col-md-4 px-5 text-center text-md-start">
+        <div class="footer-position">
+            <div class="footer-section col-12 col-md-4">
                 <h2>Contacto</h2>
                 <ul class="contacto">
-                    <li><i class="fa-brands fa-whatsapp fs-2 icon"></i><a class="text-white text-decoration-none" href="#">WhatsApp</a></li>
-                    <li><img src="../img/redes_sociales.webp" alt="Icono RRSS" class="icon"> <a class="text-white text-decoration-none" href="#">Redes sociales</a></li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp fs-2 icon"></i>
+                        <a href="#">WhatsApp</a>
+                    </li>
+                    <li>
+                        <img src="../img/redes_sociales.webp" alt="Icono RRSS" class="icon">
+                        <a href="#">Redes sociales</a>
+                    </li>
                 </ul>
             </div>
-            <div class="footer-section col-12 col-md-4 px-5 text-center text-md-start">
+            <div class="footer-section col-12 col-md-4">
                 <h2>Categorías</h2>
                 <ul>
-                    <li><a class="text-white text-decoration-none" href="../index.html#veggie">Veggie</a></li>
-                    <li><a class="text-white text-decoration-none" href="../index.html#trending">Tendencias</a></li>
-                    <li><a class="text-white text-decoration-none" href="../index.html#postres">Postres</a></li>
+                    <li><a href="../index.html#veggie">Veggie</a></li>
+                    <li><a href="../index.html#trending">Tendencias</a></li>
+                    <li><a href="../index.html#postres">Postres</a></li>
                 </ul>
             </div>
-            <div class="footer-section col-12 col-md-4 px-5 text-center text-md-start">
+            <div class="footer-section col-12 col-md-4">
                 <h2>Conocenos</h2>
                 <ul>
+<<<<<<< HEAD
                     <li><a class="text-white text-decoration-none" href="./nosotros.html">Nosotros</a></li>
                     <li><a class="text-white text-decoration-none" href="./preguntas.html">Preguntas Frecuentes</a></li>
+=======
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+>>>>>>> 735a9715c6b1f4c51e34d6614e2abaa496655fa5
                 </ul>
             </div>
         </div>
-        <div class="copyright d-flex justify-content-center align-items-center text-center py-3">
+        <div class="copyright">
             <p>Copyright &copy; 2024 - Grupo 4 Codo a Codo (Full Stack Python)</p>
         </div>
     </footer>
