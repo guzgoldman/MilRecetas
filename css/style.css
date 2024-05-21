@@ -530,15 +530,19 @@ ul, ol, dl {
 }
 
 
+.bar {
+    display: flex;
+    justify-content: center;
+}
 
-
-.img_barra {
+.bar-img {
     margin: 0 10px;
     position: relative;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
-.img_barra:hover {
+.bar-img:hover {
     transform: scale(1.1);
 }
 
@@ -546,19 +550,46 @@ ul, ol, dl {
 .lugar_logo {
     width: 100px;
     height: auto;
+    display: block;
+    margin: auto;
 }
 
 .title {
+    text-decoration: none;
+    color: black;
     font-weight: bold;
     font-size: 20px;
 }
 
 .title_nos {
     font-size: 50px;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.info-reverse-row {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .info-reverse-row, .info-row {
+        flex-direction: column;
+    }
 }
 
 .title_ubi {
     font-size: 50px;
+    text-align: center;
+    margin: 1.5rem 0;
 }
 
 .text-block, .image-block {
@@ -566,6 +597,8 @@ ul, ol, dl {
 }
 
 .text-block {
+    text-align: center;
+    padding: 1.5rem;
     background-color: #acdfe2;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
@@ -575,6 +608,8 @@ ul, ol, dl {
 
 .image-block {
     width: 5%;
+    text-align: center;
+    padding: 1.5rem;
 }
 
 .image-block img {
@@ -589,9 +624,16 @@ img {
     height: auto;
 }
 
-.mapa{
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map{
     width: 90%;
     height: 85vh;
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {
