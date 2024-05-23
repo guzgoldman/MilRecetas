@@ -5,12 +5,12 @@ MilRecetas es un sitio web creado por Jorge Ceballos, Héctor Guzmán y Marisol 
 
 ### Encuentra miles de recetas: 
 Explora una amplia variedad de recetas para todos los gustos y ocasiones.
-### Busca por ingredientes: 
-Usa nuestro buscador avanzado para encontrar recetas con los ingredientes que tengas a mano.
+### Busca por nombre o ingredientes: 
+Usa nuestro buscador para encontrar las recetas que quieres o todas las recetas con los ingredientes que tengas a mano.
 ### Guarda tus recetas favoritas: 
 Crea una colección personalizada con tus recetas preferidas para acceder a ellas fácilmente.
 ### Comparte tus creaciones: 
 Sube tus propias recetas y compártelas con la comunidad de MilRecetas.
 
 ## Pronto, más que un simple sitio web:
-MilRecetas no se detiene ahí. Nuestro objetivo es convertirnos en una webapp que, utilizando inteligencia artificial, te ayude a crear recetas completas a partir de los ingredientes que tengas a mano. Imagina la comodidad de tener un chef personal en tu bolsillo, guiándote paso a paso en la creación de platos deliciosos y personalizados.
+**MilRecetas** no se detiene ahí. Nuestro objetivo es convertirnos en una **aplicación web** que, utilizando **IA**, genere recetas completas a partir de los ingredientes que ingreses. En una situación en la que tienes pocos ingredientes y no puedes ir a la tienda, imagina la **comodidad** de ingresarlos en una lista y que **en segundos** recibas una receta completa en la que **no necesitas nada más que lo que tienes**, con una guía paso a paso incluída.
